@@ -6,7 +6,12 @@ public class SingletonDoubleCheckLock {
 	
 	private String var;
 	
-	private SingletonDoubleCheckLock() {}
+	private SingletonDoubleCheckLock() {
+		if(obj != null) {
+			//uncomment it for making singleton safeguard from reflection 
+//			throw new RuntimeException("cannot create more than one instances for singleton");
+		}
+	}
 	
 	public static SingletonDoubleCheckLock getInstance() {
 		if(obj == null) {

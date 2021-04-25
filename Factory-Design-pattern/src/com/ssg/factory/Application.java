@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.ssg.example1.factory.PlanFactory;
-import com.ssg.factory.example1.domain.InstitutionalPlan;
 import com.ssg.factory.example1.domain.Plan;
 import com.ssg.factory.example1.domain.PlanEnum;
 

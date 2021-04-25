@@ -6,7 +6,12 @@ public class ThreadSafeSingleton {
 	
 	private String var;
 	
-	private ThreadSafeSingleton() {}
+	private ThreadSafeSingleton() {
+		if(obj != null) {
+			//uncomment it for making singleton safeguard from reflection 
+//			throw new RuntimeException("cannot create more than one instances for singleton");
+		}
+	}
 	
 	synchronized public static ThreadSafeSingleton getInstance() {  // synchronized to handle concurrent access
 		 if(obj == null) {

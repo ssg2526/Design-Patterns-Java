@@ -1,12 +1,30 @@
 package com.ssg.singleton.domain;
+
+import java.io.Serializable;
+
 //Lazy initialization
-public class SingletonClassic {
+public class SingletonClassic implements Serializable {
 	
 	private static SingletonClassic obj;
 	
 	private String var;
 	
-	private SingletonClassic() {}; // very important line to restrict user to create object
+	/**
+	 * The constructor must be made private to avoid users to create new istances
+	 * Uncomment exception for making singleton safeguard from reflection 
+	 */
+	private SingletonClassic() {
+		if(obj != null) {
+//			throw new RuntimeException("cannot create more than one instances for singleton");
+		}
+	};
+	
+	/**
+	 * Uncomment below method for making singleton safeguard from serialization
+	 */
+//	protected Object readResolve() {
+//		return obj;
+//	}
 	
 	public static SingletonClassic getInstance() {
 		if(obj == null) {
