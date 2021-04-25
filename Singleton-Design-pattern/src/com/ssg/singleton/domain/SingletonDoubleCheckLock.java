@@ -1,4 +1,4 @@
-package com.ssg.singletom.domain;
+package com.ssg.singleton.domain;
 
 public class SingletonDoubleCheckLock {
 	

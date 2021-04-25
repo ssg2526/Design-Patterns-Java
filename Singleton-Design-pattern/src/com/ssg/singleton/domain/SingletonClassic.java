@@ -1,4 +1,4 @@
-package com.ssg.singletom.domain;
+package com.ssg.singleton.domain;
 //Lazy initialization
 public class SingletonClassic {
 	
@@ -28,6 +28,8 @@ public class SingletonClassic {
 	}
 
 }
+
+
 
 /* cons - everytime a null check is done
  * 		- In multithreaded environment, it may break singleton property.

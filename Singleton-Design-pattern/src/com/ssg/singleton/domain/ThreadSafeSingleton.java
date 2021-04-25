@@ -1,4 +1,4 @@
-package com.ssg.singletom.domain;
+package com.ssg.singleton.domain;
 
 public class ThreadSafeSingleton {
 	
@@ -27,5 +27,7 @@ public class ThreadSafeSingleton {
 		this.var = var;
 	}
 }
+
+
 
 // cons - though it is thread safe but every time a thread will have to wait if the other thread is using the method
