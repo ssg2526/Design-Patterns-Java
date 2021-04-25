@@ -31,6 +31,7 @@ public class SingletonClassic {
 
 
 
+
 /* cons - everytime a null check is done
  * 		- In multithreaded environment, it may break singleton property.
  */
