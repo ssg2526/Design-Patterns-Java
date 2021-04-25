@@ -27,3 +27,12 @@ public class BillPughSingleton {
 	}
 
 }
+
+/* This is the most used singleton design pattern across the world. It is Thread safe too.
+ * This is used over the synchronization because prior to java 5 there were memory management issues which cause the code thread unsafe
+ * So Bill came up with this approach of using static inner class
+ */
+
+/* cons - This approach can be easily broken by using java reflections so for that EnumSingleton can be used
+ * 
+ */
