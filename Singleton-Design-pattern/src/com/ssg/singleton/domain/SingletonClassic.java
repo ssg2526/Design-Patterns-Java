@@ -10,7 +10,7 @@ public class SingletonClassic implements Serializable {
 	private String var;
 	
 	/**
-	 * The constructor must be made private to avoid users to create new istances
+	 * The constructor must be made private to avoid users to create new instances
 	 * Uncomment exception for making singleton safeguard from reflection 
 	 */
 	private SingletonClassic() {

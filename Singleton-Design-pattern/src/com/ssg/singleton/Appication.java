@@ -54,7 +54,7 @@ public class Appication {
 		}
 		
 		
-		/*
+		/**
 		 * If singleton is breaking with reflection then go to the corresponding class and uncomment the line in constructor
 		 * it will start safeguarding from reflection attacks
 		 */
